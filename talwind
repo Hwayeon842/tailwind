@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    </head>
+    <body>
+        <h1 class ="text-3xl bg-amber-600 font-bold underline">
+            Hello world!
+        </h1>
+  
+  <div class="p-4 bg-gray-100">
+  <h3 class="text-lg font-bold text-yellow-600">공지사항</h3>
+  <p class="text-gray-700 leading-relaxed mt-1">
+    다음 주 시스템 점검이 예정되어 있습니다.
+  </p>
+  <p class="text-sm text-gray-500 mt-1">2025-02-15</p>
+  <p class="text-red-600 tracking-wide line-clamp-1 mt-2">
+    점검 기간 동안 일부 기능이 일시적으로 중단될 수 있습니다.
+  </p>
+</div>
+
+<div class="p-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 space-y-2 rounded-lg border border-gray-300 ">
+<span class="inline-block px-4 py-1 bg-white text-yellow-600 font-bold text-xs rounded-full text-center leading-none">PREMIUM</span>
+<h4 class="text-3xl font-bold text-white">Hello world!</h4>
+<p class=" text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<button class="px-4 py-2 bg-white text-purple-600 font-semibold rounded-md hover:bg-purple-100 transition">Get Started→</button>
+</div>
+
+<div class="p-4 border-l-4 border-blue-500 bg-white rounded-lg shadow-md space-y-2">
+
+  <icon class="w-6 h-6">😉</icon>
+<h3 class="text-lg font-bold text-gray-800">프로필</h3>
+<p class="text-gray-600 leading-relaxed">안녕하세요! 저는 웹 개발자입니다.</p>
+
+</div>
+
+<div class="p-4 bg-gray-200 space-y-2 rounded-lg border border-gray-300 ">Box</div> 
+
+  <div class="p-6 bg-blue-50 rounded-xl border border-blue-200 space-y-3">
+  <div class="w-10 h-10 bg-blue-500 rounded-full"></div>
+
+  <h3 class="text-blue-700 font-bold text-lg">새로운 업데이트가 있습니다</h3>
+
+  <p class="text-gray-700 leading-relaxed">
+    시스템 업데이트가 예정되어 있습니다. 안정적인 서비스를 위해
+    점검 시간 동안 일부 기능이 제한될 수 있습니다.
+  </p>
+
+  <p class="text-blue-600 underline text-sm">자세히 보기</p>
+</div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            
+            (p.text-blue-$00>lorem5)*9
+        </ul>
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind 시작하기</title>
+</head>
+<body class="p-8">
+
+  <h1 class="text-3xl font-bold bg-amber-600 text-blue-600">
+    Tailwind 적용 성공!
+  </h1>
+<button class="px-4 py-2 bg-green-500 text-white rounded-md">
+  확인
+</button>
+<div>
+<p class="text-base sm:text-lg md:text-xl lg:text-2xl">
+  반응형 텍스트
+</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  <div class="p-4 bg-gray-100">Card 1</div>
+  <div class="p-4 bg-gray-100">Card 2</div>
+  <div class="p-4 bg-gray-100">Card 3</div>
+</div>
+<div class="text-base [@media(min-width:900px)]:text-2xl">
+  임의 브레이크포인트 사용
+
+<div>
+<p class="text-base">기본 크기(text-base)</p>
+<p class="text-xl">한 단계 큰 텍스트(text-xl)</p>
+<p class="text-[24px]">고정 24px(text-[24px])</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<p class="font-normal">기본 글씨</p>
+<p class="font-semibold">조금 굵은 글씨</p>
+<p class="font-bold">굵은 글씨</p>
+<p class="tracking-tight">자간 좁음</p>
+<p class="tracking-wide">자간 넓음</p>
+<p class="tracking-widest text-xl">아주 넓음</p>
+
+<p class="leading-tight">
+  첫 번째 줄<br>두 번째 줄
+</p>
+<p class="text-center">가운데 정렬</p>
+<p class="text-right">오른쪽 정렬</p>
+<p class="leading-relaxed">
+
+  읽기 쉬운<br>행간입니다.
+</p>
+<p class="text-gray-700">Gray 700</p>
+<p class="text-blue-600 font-semibold">Blue 600</p>
+<p class="text-red-500">Red 500</p>
+
+<p class="text-[#1e40af]">HEX 파란색</p>
+<p class="text-[#ff5733]">HEX 주황-빨강</p>
+
+<p class="text-[rgb(34,197,94)]">RGB 초록</p>
+<p class="text-[hsl(200,100%,50%)]">HSL 파랑</p>
+
+<p class="text-red-500/50">50% 투명 빨강</p>
+<p class="text-blue-600/30">30% 투명 파랑</p>
+
+</div>
+<p class="text-brand-primary">브랜드 기본 색상</p>
+<p class="text-brand-secondary font-semibold">브랜드 보조 색상</p>
+<p class="text-brand-dark text-lg">브랜드 다크 색상</p>
+
+<p class="text-[rgba(255,0,0,0.5)]">RGBA 투명 빨강</p>
+
+</body><p class="line-clamp-2">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+</p>
+<p class="line-clamp-2">내용…</p>
+<p class="line-clamp-1">내용…</p>
+<p class="line-clamp-3">내용…</p>
+
+<div class="p-4">
+  <h3 class="text-lg font-bold text-yellow-600">공지사항</h3>
+  <p class="text-gray-700 leading-relaxed mt-1">
+    다음 주 시스템 점검이 예정되어 있습니다.
+  </p>
+  <p class="text-sm text-gray-500 mt-1">2025-02-15</p>
+  <p class="text-red-600 tracking-wide line-clamp-1 mt-2">
+    점검 기간 동안 일부 기능이 일시적으로 중단될 수 있습니다.
+  </p>
+
+  <p class="text-base">기본 크기(text-base)</p>
+<p class="text-xl">한 단계 큰 텍스트(text-xl)</p>
+<p class="text-[24px]">고정 24px(text-[24px])</p>
+</div>
+<p class="font-normal">기본 글씨</p>
+<p class="font-semibold">조금 굵은 글씨</p>
+<p class="font-bold">굵은 글씨</p>
+
+<p class="tracking-tight">자간 좁음</p>
+<p class="tracking-wide">자간 넓음</p>
+<p class="tracking-widest text-xl">아주 넓음</p>
+
+<div class="m-4">전체 여백 16px</div>
+<div class="mt-8">위쪽 여백 32px</div>
+<div class="mx-auto w-1/2">가운데 정렬</div>
+<div class="m-[20px]">20px 고정 여백</div>
+
+<p class="mt-6">Hello</p>
+<p class="mx-auto w-40">Box</p>
+<p class="m-[30px]">Item</p>
+
+<p class="mt-6">Hello</p>
+<p class="mx-auto w-40">Box</p>
+<p class="m-[30px]">Item</p>
+
+<p class="px-4 bg-gray-100">Button</p>
+<p class="p-8 bg-gray-200">Card</p>
+<p class="p-[40px] bg-gray-300">Content</p>
+
+<div class="flex gap-4">
+  <div>Box 1</div>
+  <div>Box 2</div>
+</div>
+<div class="space-y-4">
+  <p>첫 번째</p>
+  <p>두 번째</p>
+  <p>세 번째</p>
+</div>
+<div class="flex gap-6">
+  <div class="w-[200px] p-6 bg-gray-100 space-y-2">
+    <div class="h-24 bg-gray-300"></div>
+    <h3 class="text-lg font-bold">카드 제목</h3>
+    <p class="text-sm leading-relaxed">간단한 설명입니다.</p>
+    <button class="px-4 py-2 bg-blue-500 text-white rounded">
+      보기
+    </button>
+  </div>
+  <div class="bg-gray-200 p-4">회색 배경</div>
+<div class="bg-blue-500 text-white p-4">파란 배경</div>
+<div class="bg-[#ffddaa] p-4">HEX 배경</div>
+<div class="bg-blue-500/40 p-4">투명 파랑</div>
+
+<div class="bg-[url('/banner.jpg')] bg-cover bg-center h-40">
+  배너 이미지
+</div>
+
+<div class="bg-gradient-to-r from-blue-400 to-purple-500 h-20"></div
+
+  </body>
+</html>
