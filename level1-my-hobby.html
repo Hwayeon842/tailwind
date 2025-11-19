@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나의 취미 생활</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Noto Sans KR", system-ui, -apple-system, sans-serif;
+        background-color: #eef3ff;
+        min-height: 100vh;
+      }
+
+      /* 헤더 */
+      .header {
+        background-color: #5247e5;
+        color: white;
+        padding:8%;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 4px;
+      }
+
+      .header h1 .emoji {
+        vertical-align: -2px;
+        margin-right: 8px;
+      }
+
+      .header p {
+        font-size: 18px;
+        opacity: 1;
+      }
+      .h3 {
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      .h4 {
+        font-size: 16px;
+        font-weight: 300;
+        opacity: 0.75;
+      }
+
+      /* 메인 컨테이너 */
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* 카드 */
+      .card {
+        background: white;
+        border-radius: 24px;
+        border: 1px solid #e7ecff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        margin-top: 24px;
+        position: relative;
+      }
+
+      /* 카드 상단 */
+      .card-header {
+        padding: 56px 48px 32px;
+        text-align: center;
+      }
+
+      /* 아바타 */
+      .avatar {
+        width: 176px;
+        height: 176px;
+        margin: 0 auto 32px;
+        border-radius: 50%;
+        background-color: #d8defe;
+      }
+
+      /* 제목 */
+      .card-title {
+        font-size: 30px;
+        font-weight: 400;
+        color: #28292c;
+        margin-bottom: 12px;
+        line-height: 1.1;
+      }
+
+      /* 부제목 */
+      .card-subtitle {
+        font-size: 20px;
+        color: #6f758b;
+      }
+
+      /* 구분선 */
+      .divider {
+        height: 1px;
+        background-color: #e7ecff;
+        margin: 0 40px;
+      }
+
+      /* 본문 */
+      .card-content {
+        padding: 40px 48px;
+        font-size: 17px;
+        line-height: 1.9;
+        color: #1f2a44;
+      }
+
+     .card-header2 {
+        padding: 48px 32px 74px;
+        text-align: left;
+        border-left: 4px solid #685fe6;
+        border-radius: 30px 0 0 30px;
+
+      }
+
+      .card-header2 h2 {
+        font-size: 48px;
+        margin-left: -6px;
+      }
+
+      .card-header3 {
+          padding: 48px 32px 84px;
+          text-align: left;
+          border-left: 4px solid #7e47e5;
+          border-radius: 30px 0 0 30px;
+        }
+
+      .card-header3 h2 {
+        font-size: 48px;
+        margin-left: -6px;
+      }
+
+      .card-header4 {
+          padding: 48px 32px 84px;
+          text-align: left;
+          border-left: 4px solid #e65e5e;
+          border-radius: 30px 0 0 30px;
+        }
+      .card-header4 h2 {
+        font-size: 48px;
+        margin-left: -6px;
+      }
+      .card-header5 {
+          padding: 48px 32px 84px;
+          text-align: left;
+          border-left: 4px solid #e5a647;
+          border-radius: 30px 0 0 30px;
+        }
+      .card-header5 h2 {
+        font-size: 48px;
+        margin-left: -6px;
+      }
+      .card-header6 {
+          padding: 48px 32px 84px;
+          text-align: left;
+          border-left: 4px solid #39c19a;
+          border-radius: 30px 0 0 30px;
+        }
+      .card-header6 h2 {
+        font-size: 48px;
+        margin-left: -6px;
+      }
+
+
+      /* 반응형 */
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 36px;
+        }
+
+        .header p {
+          font-size: 18px;
+        }
+
+        .card-header {
+          padding: 48px 32px 24px;
+        }
+
+        .avatar {
+          width: 100px;
+          height: 100px;
+        }
+
+        .card-title {
+          font-size: 30px;
+        }
+
+        .card-subtitle {
+          font-size: 18px;
+        }
+
+        .card-content {
+          padding: 32px 32px;
+          font-size: 16px;
+        }
+
+        .divider {
+          margin: 0 24px;
+        }
+
+      }
+
+        .card-header2 {
+          padding: 48px 32px 84px;
+        }
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <header class="header">
+      <h1><span class="emoji">🎨</span>나의 취미 생활</h1>
+      <p>일상을 더 풍요롭게 만드는 나만의 시간</p>
+    </header>
+
+    <!-- 메인 컨텐츠 -->
+    <div class="container">
+      <div class="card">
+        <!-- 카드 상단 -->
+        <div class="card-header">
+          <div class="avatar"></div>
+          <h2 class="card-title">그림 그리기</h2>
+          <p class="card-subtitle">시작한 지 2년째</p>
+        </div>
+
+        <!-- 구분선 -->
+        <div class="divider"></div>
+
+        <!-- 본문 -->
+        <div class="card-content">
+          주말마다 근처 공원이나 카페에 가서 풍경을 스케치합니다. 처음엔 서툴렀지만 이제는 제법 그럴듯한 그림을 그릴 수 있게 되었어요. 그림을 그리는 동안은 모든 스트레스가 사라지는 것 같습니다.
+        </div>
+        </div>
+        <!-- /* 분리된 다른 카드 */ -->
+      <div class="card" style="margin-top: 16px;">
+        <!-- 카드 상단 -->
+        <div class="card-header2">
+        <h2>🎨</h2>
+        <h3 class="h3">주요 활동</h3>
+        <h4 class="h4">수채화 그리기, 인물 스케치, 풍경화그리기 </h4>
+
+
+      
+      </div>
+
+        </div>
+        <!-- /* 분리된 다른 카드 */ -->
+      <div class="card" style="margin-top: 16px;">
+        <!-- 카드 상단 -->
+        <div class="card-header3">
+        <h2>📅</h2 >
+        <h3 class="h3">활동 시간</h3>
+        <h4 class="h4">주말 오후 2시간, 평일 저녁 30분 연습</h4>
+        </div>
+        </div>
+   <div class="card" style="margin-top: 16px;">
+        <!-- 카드 상단 -->
+        <div class="card-header4">
+        <h2>📍</h2>
+        <h3 class="h3">주로 가는 곳</h3>
+        <h4 class="h4">한강 공원, 북촌 한옥마을, 동네 카페</h4>
+</div>
+</div>
+
+         <div class="card" style="margin-top: 16px;">
+        <!-- 카드 상단 -->
+        <div class="card-header5">
+        <h2>💡</h2>
+        <h3 class="h3">이 취미의 장점</h3>
+        <h4 class="h4">스트레스 해소, 관찰력 향상, 창의력 발달</h4>
+
+
+        </div>      
+      </div>
+ <div class="card" style="margin-top: 16px;">
+        <!-- 카드 상단 -->
+        <div class="card-header6">
+        <h2>🎯</h2>
+        <h3 class="h3">앞으로의 목표</h3>
+        <h4 class="h4">개인전 열기, 그림 작품 100점 완성하기, 유화 배우기</h4>
+</div>
+</div>
+
+
+    <!-- /* 타이틀 만들기 */ -->
+    <div style="margin-top: 48px; text-align: center;">
+      <h2 style="font-size: 28px; font-weight: 600; color: #28292c;">📸 나의 작품</h2>
+    </div>
+
+    <!-- /* 작품 카드 */ -->
+       <div class="card" style="margin-top: 24px;">
+      <div style="padding: 48px;">
+        <div style="width: 100%; height: 200px; background-color: #e7ecff; border-radius: 12px; margin-bottom: 16px;"></div>
+        <h3 style="font-size: 20px; font-weight: 600; color: #28292c; margin-bottom: 8px;">작품 1: 한강의 일몰</h3>
+        <p style="font-size: 16px; color: #6f758b;">
+수채화 · 2024년 10월</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top: 24px;">
+      <div style="padding: 48px;">
+        <div style="width: 100%; height: 200px; background-color: #e7ecff; border-radius: 12px; margin-bottom: 16px;"></div>
+        <h3 style="font-size: 20px; font-weight: 600; color: #28292c; margin-bottom: 8px;">작품 2: 골목길 풍경</h3>
+        <p style="font-size: 16px; color: #6f758b;">
+연필 스케치 · 2024년 9월</p>
+      </div>
+    </div>
+     <div class="card" style="margin-top: 24px;">
+      <div style="padding: 48px;">
+        <div style="width: 100%; height: 200px; background-color: #e7ecff; border-radius: 12px; margin-bottom: 16px;"></div>
+        <h3 style="font-size: 20px; font-weight: 600; color: #28292c; margin-bottom: 8px;">작품 3: 카페 정물화
+</h3>
+        <p style="font-size: 16px; color: #6f758b;">
+수채화 · 2024년 8월</p>
+      </div>
+    </div>
+    
+    <!-- 푸터 -->
+    <footer style="margin-top: 48px; background-color: #5247e5; padding: 32px; text-align: center; color: white;">
+      <p style="font-size: 14px; margin-bottom: 8px; opacity: 0.9;">만든 사람: <span style="font-weight: 600;">[이름을 입력하세요]</span></p>
+      <p style="font-size: 14px; opacity: 0.8;">2024 · 화연의 TailwindCSS 초급 과제</p>
+    </footer>
+
+      </div>  
+    </div>
+</body>
+</html>
